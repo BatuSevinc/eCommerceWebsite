@@ -1,9 +1,22 @@
-import React from 'react'
+//Components
+import Categories from "../../components/Categories/Categories";
+import Contact from "../../components/Contact/Contact";
+import FeaturedProducts from "../../components/FeaturedProducts/FeaturedProducts";
+import Slider from "../../components/Slider/Slider";
+//Scss
+import "./home.scss";
+
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div className="home">
+      <Slider />
+      <FeaturedProducts type="featured"/>
+      <Categories/>
+      <FeaturedProducts type="trending"/>
+      <Contact/>
+    </div>
+  );
+};
 
-export default Home
+export default Home;
